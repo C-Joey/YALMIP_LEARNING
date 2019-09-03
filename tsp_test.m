@@ -1,6 +1,6 @@
 % 利用yamlip求解TSP问题
 clear;clc;close all;
-d = load('tsp_jin.txt')';
+d = load('tsp_jin.txt');
 n = size(d,1);
 % 决策变量
 x = binvar(n,n,'full');
