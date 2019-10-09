@@ -38,3 +38,4 @@ end
 if d(i,j)==d(j,i)
     fprintf('a')
 end
+u(1)
