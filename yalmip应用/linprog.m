@@ -16,9 +16,10 @@ z = c*x;
 % C = [C;x>=0];
 C=[A*x >= b,x>=0];
 
+ops=sdpsettings('verbose',0);
 
 %求解
-result = optimize(C,z);
+result = optimize(C,z,ops);
 if result.problem == 0    %求解成功
     x_star = double(x)
     z_star = double(z)

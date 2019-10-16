@@ -17,8 +17,9 @@ for i=2:(n-1)
     C = [C,(sum(x(i,:))-sum(x(:,i))==0)];
 end
 
+ops=sdpsettings('verbose',0);
 % Çó½â
-result=solvesdp(C,z);
+result=solvesdp(C,z,ops);
 if result.problem == 0
     x_star = value(x)
     z_star = value(z)

@@ -18,8 +18,8 @@ ops=sdpsettings('verbose',0);
 %求解
 result = optimize(C,z,ops);
 if result.problem == 0    %求解成功
-    x_star = double(x);
-    z_star = double(z);
+    x_star = double(x)
+    z_star = double(z)
     else
     disp('求解过程中出错');
 end
